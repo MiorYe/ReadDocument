@@ -73,7 +73,7 @@ public class ReadExcelImpl implements ReadExcel{
 
     /**
      * @Author:
-     * @Description: 读取.Xls文件
+     * @Description: 读取.Xls文 件
      * @Date: 2017/11/27 0027 下午 8:31
      * @Param: No such property: code for class: Script1
      */
