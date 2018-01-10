@@ -1,0 +1,46 @@
+2018-01-08 13:25:56,658 - using default service HttpInvoker:com.weimaipay.http.BaseHttpInvoker
+2018-01-08 13:25:56,659 - WeiMaiPayService ready for APP 10000
+2018-01-08 13:25:56,972 - invoke service [http://test.weimaipay.com:7080/api/trade/down] request:{"billType":"2","merchantOutId":"911300000000540072","merchantPayId":"834367089803283","tradeDate":"20170815"}
+2018-01-08 13:25:59,793 - response:{"success":false,"errorNo":"106005","msg":"未配置应用授权信息"}
+2018-01-08 13:32:13,692 - using default service HttpInvoker:com.weimaipay.http.BaseHttpInvoker
+2018-01-08 13:32:13,692 - WeiMaiPayService ready for APP 19999
+2018-01-08 13:32:13,899 - invoke service [http://test.weimaipay.com:7080/api/trade/down] request:{"billType":"2","merchantOutId":"911300000000540072","merchantPayId":"834367089803283","tradeDate":"20170815"}
+2018-01-08 13:32:14,512 - response:{"success":false,"errorNo":"103731","msg":"不允许获取30天之前的对账文件"}
+2018-01-08 13:32:56,414 - using default service HttpInvoker:com.weimaipay.http.BaseHttpInvoker
+2018-01-08 13:32:56,415 - WeiMaiPayService ready for APP 19999
+2018-01-08 13:32:56,539 - invoke service [http://test.weimaipay.com:7080/api/trade/down] request:{"billType":"2","merchantOutId":"911300000000540072","merchantPayId":"834367089803283","tradeDate":"20171201"}
+2018-01-08 13:32:57,148 - response:{"success":false,"errorNo":"103731","msg":"不允许获取30天之前的对账文件"}
+2018-01-08 13:33:13,144 - using default service HttpInvoker:com.weimaipay.http.BaseHttpInvoker
+2018-01-08 13:33:13,145 - WeiMaiPayService ready for APP 19999
+2018-01-08 13:33:13,290 - invoke service [http://test.weimaipay.com:7080/api/trade/down] request:{"billType":"2","merchantOutId":"911300000000540072","merchantPayId":"834367089803283","tradeDate":"201712010"}
+2018-01-08 13:33:13,945 - response:{"csvFileContent":"商户号,交易流水号,业务流水号,交易日期(yyyyMMddHHmmss),交易金额（分）,交易方向,交易类型,原支付单号\r\n,,,,,,\r\n总交易笔数：,0,,,,,\r\n总交易金额（单位分）：,0,,,,,\r\n收入金额（单位分）：,0,,,,,\r\n支出金额（单位分）：,0,,,,,\r\n结算金额（单位分）：,0,,,,,\r\n,,,,,,","csvFileName":"834367089803283_201712010_T.csv"}
+2018-01-08 13:49:14,846 - FTP登陆失败
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.weimaipay.bill.ParseTradeData.pullFileFromFtp(ParseTradeData.java:164)
+	at com.weimaipay.bill.ParseTradeData.pullFtpCsvFile(ParseTradeData.java:107)
+	at com.weimaipay.service.TestPullFileFromFtp.main(TestPullFileFromFtp.java:19)
+2018-01-08 15:04:22,853 - FTP登陆失败
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:182)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:203)
+	at com.weimaipay.bill.ParseTradeData.pullFileFromFtp(ParseTradeData.java:164)
+	at com.weimaipay.bill.ParseTradeData.pullFtpCsvFile(ParseTradeData.java:107)
+	at com.weimaipay.service.TestPullFileFromFtp.main(TestPullFileFromFtp.java:23)
