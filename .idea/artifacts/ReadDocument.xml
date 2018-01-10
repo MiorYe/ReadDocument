@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ReadDocument">
+    <output-path>$PROJECT_DIR$/classes/artifacts/ReadDocument</output-path>
+    <root id="root" />
+  </artifact>
+</component>
